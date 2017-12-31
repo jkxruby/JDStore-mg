@@ -6,14 +6,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/" class="navbar-brand"><%= image_tag("pirate_icon.png", size:"32") %></a>
+            <a href="/" class="navbar-brand"><%= image_tag("pirate_icon.png") %></a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><%= link_to("最新航程", products_path) %></li>
-                <li><%= link_to("一定要看", change_path) %></li>
-                <li><%= link_to("关于我们", about_path) %></li>
-                <li><%= link_to("奇迹论坛", sail_path) %></li>
+                <li><%= link_to("关于我们", products_path) %></li>
+                <li><%= link_to("装修问答", change_path) %></li>
+                <li><%= link_to("其他媒体", about_path) %></li>
+                <!-- <li><%= link_to("奇迹论坛", sail_path) %></li> -->
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <% if current_cart.products.any? %>
