@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
     resources :favorites, only: [:create, :destroy]
+    
     namespace :account do
         resources :orders, :favorites, only: [:index]
         # resources :profiles, only: [:show, :edit, :update]
