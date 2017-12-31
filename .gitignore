@@ -17,3 +17,12 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+config/database.yml
+
+public/uploads
+# Ignore seeds.rb file
+/db/seeds.rb
+
+# Ignore application configuration
+/config/application.yml

@@ -1,15 +1,12 @@
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
   "https://github.com/#{repo_name}.git"
 end
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -44,9 +41,46 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
+  # Use sqlite3 as the database for Active Record
+  gem 'seed_dump'
+  gem 'sqlite3'
+  # Debug tools
+  gem 'guard'
+  gem 'guard-livereload'
+  gem 'awesome_rails_console'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
 end
+
+gem 'letter_opener', group: :development
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'bootstrap-sass' 
+group :production do
+  gem 'pg'
+end
+
+gem 'bootstrap-sass'
+gem 'animate-rails'
+gem 'wow-rails'
+gem 'devise'
+gem 'simple_form'
+gem 'font-awesome-rails'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'ransack'
+gem 'gritter'
+gem 'aasm'
+gem 'figaro'
+gem 'fog-aws'
+gem 'rails-i18n'
+gem 'devise-i18n'
+gem 'paperclip'
+gem 'intercom-rails'
+gem 'will_paginate'
+
+# TODO: use Clearance to replace device
+# TODO: use paperclip to replace carrierwave

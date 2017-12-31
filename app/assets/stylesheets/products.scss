@@ -1,0 +1,100 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.header2{
+  height: 660px;
+  width: 100%;
+  padding: 30px 0 30px;
+  // margin-top: 50px;
+  background-image: linear-gradient(rgba(21, 8, 7, 0.1), rgba(0, 0, 0, 0.1)), url(https://ww1.sinaimg.cn/large/006tKfTcgy1fd7l0zipjsj31bu0giwgx.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;}
+
+
+
+
+.spacing-top {
+  padding-top: 3em;
+}
+
+.banner {
+  min-height: 150px;
+
+  // background-color: grey;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 300;
+
+    .lead {
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+  p {
+    font-size: 28px;
+  }
+}
+
+.search {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #dce0e0;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 #dce0e0;
+
+  // background-color: lightblue;
+
+  .search_form {
+    display: inline;
+    min-width: 800px;
+    margin: 0 auto;
+  }
+
+  .search_form_content {
+    display: table-cell;
+    width: 70%;
+  }
+
+  .search_field {
+    display: table-cell;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .search_field:focus {
+    border-bottom: 1px solid #0af;
+  }
+
+  .search_form_button {
+    display: table-cell;
+    max-width: 250px;
+    padding-left: 20px;
+  }
+}
+
+.nav-tabs li a {
+  color: #666;
+}
+
+.thumbnail {
+  display: block;
+  padding: .25em;
+  margin-bottom: 1.25em;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+
+#myCarousel {
+  height: 350px;
+}
