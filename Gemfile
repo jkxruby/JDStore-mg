@@ -70,12 +70,12 @@ gem 'wow-rails'
 gem 'devise'
 gem 'simple_form'
 gem 'font-awesome-rails'
-gem 'carrierwave'
+#gem 'carrierwave'
 gem 'mini_magick'
 gem 'ransack'
 gem 'gritter'
 gem 'aasm'
-gem 'figaro'
+#gem 'figaro'
 gem 'fog-aws'
 gem 'rails-i18n'
 gem 'devise-i18n'
@@ -85,3 +85,6 @@ gem 'will_paginate'
 
 # TODO: use Clearance to replace device
 # TODO: use paperclip to replace carrierwave
+
+
+# 隐藏 figaro, carrierwave 这些 gem
