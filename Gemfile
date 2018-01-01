@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'sqlite3'
 end
 
 group :development do
@@ -43,7 +44,7 @@ group :development do
   gem 'listen', '~> 3.0.5'
   # Use sqlite3 as the database for Active Record
   gem 'seed_dump'
-  gem 'sqlite3'
+
   # Debug tools
   gem 'guard'
   gem 'guard-livereload'
