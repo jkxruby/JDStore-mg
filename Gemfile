@@ -79,7 +79,7 @@ gem 'figaro'
 gem 'fog-aws'
 gem 'rails-i18n'
 gem 'devise-i18n'
-gem 'paperclip'
+gem 'paperclip', '>= 2.0.0'
 gem 'intercom-rails'
 gem 'will_paginate'
 
