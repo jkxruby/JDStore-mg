@@ -64,10 +64,6 @@ GEM
     builder (3.2.3)
     byebug (9.0.6)
     callsite (0.0.11)
-    carrierwave (1.0.0)
-      activemodel (>= 4.0.0)
-      activesupport (>= 4.0.0)
-      mime-types (>= 1.16)
     climate_control (0.1.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
@@ -96,8 +92,6 @@ GEM
     excon (0.55.0)
     execjs (2.7.0)
     ffi (1.9.17)
-    figaro (1.1.1)
-      thor (~> 0.14)
     fog-aws (1.2.0)
       fog-core (~> 1.38)
       fog-json (~> 1.0)
@@ -296,11 +290,9 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass
   byebug
-  carrierwave
   coffee-rails (~> 4.2)
   devise
   devise-i18n
-  figaro
   fog-aws
   font-awesome-rails
   gritter
