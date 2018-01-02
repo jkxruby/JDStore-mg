@@ -3,10 +3,10 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable, :confirmable
 
-  validates :username, presence: true, uniqueness: { case_sensitive: false }
+  #validates :username, presence: true, uniqueness: { case_sensitive: false }
   attr_accessor :login
   # Only allow letter, number, underscore and punctuation.
-  validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, multiline: true
+  #validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, multiline: true
   has_many :orders
   has_many :favorites
   has_many :favorite_products, through: :favorites, source: :product
@@ -16,7 +16,7 @@ class User < ApplicationRecord
   end
 
   #has_attached_file :avatar, styles: { medium: '152x152#' }
-  validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
+  #validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
 
   def self.find_for_database_authentication(warden_conditions)
     conditions = warden_conditions.dup
